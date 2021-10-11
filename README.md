@@ -1,1 +1,1 @@
-Accept Craig's readme. Not mine.
+Someone create a better readme than mine pls
