@@ -1,0 +1,20 @@
+body {
+    background-color: #dddddd;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.search-form {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.search-results {
+    text-align: center;
+    font-size: 20px;
+}

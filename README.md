@@ -1,1 +1,1 @@
-Someone create a better readme than mine pls.
+This is our Beginner Web Development Meetup group project.
