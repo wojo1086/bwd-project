@@ -1,1 +1,1 @@
-Accept Craig's readme. Not mine.
+This is our Beginner Web Development Meetup group project.
