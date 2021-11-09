@@ -5,15 +5,14 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: #efefef;
 }
+
 header {
     grid-column: 1;
     grid-row: 1;
+    padding: 0 2rem;
     display: flex;
-}
-
-header img {
-    padding: 1rem
 }
 
 header nav {
@@ -38,8 +37,6 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    padding: 1rem 2rem;
-
 }
 
 header nav ul li a:hover {
@@ -48,15 +45,38 @@ header nav ul li a:hover {
 
 
 
+
+
 section {
     grid-column: 1;
     grid-row: 2;
+    padding: 4rem 2rem 0 2rem;
 }
 
+.search-form {
+    background-color: #b93926;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    box-shadow: 1px 1px 3px 0 #222222;
+}
 
+.search-form label {
+    display: none;
+}
+
+.search-form input {
+    flex: 1;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.3rem;
+    padding: .5rem;
+    outline: none;
+}
 
 
 main {
     grid-column: 1;
     grid-row: 3;
+    padding: 0 2rem;
 }
