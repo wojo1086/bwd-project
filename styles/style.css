@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -37,10 +38,12 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
+    color: #2c2227;
+    padding: 1rem 1.5rem
 }
 
 header nav ul li a:hover {
-    background-color: blue;
+    color: #8b95a2;
 }
 
 
