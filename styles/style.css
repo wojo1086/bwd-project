@@ -82,4 +82,36 @@ main {
     grid-column: 1;
     grid-row: 3;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+.movie-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 1rem 1rem 0 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    gap: 1rem;
+    flex-basis: calc(33% - 1rem);
+    box-shadow: 1px 1px 3px 0 #ababab;
+}
+
+.movie-card img {
+    align-self: flex-start;
+}
+
+.movie-card h5 {
+    margin: 0
+}
+
+.movie-card h6 {
+    margin: .5rem 0 0 0;
+}
+
+.movie-card p {
+    font-size: 14px;
 }
