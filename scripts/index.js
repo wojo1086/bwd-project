@@ -13,6 +13,7 @@ const movies = [
 init();
 
 function init() {
+
     movies.forEach(movie => {
         // movie.split(' ').forEach(word => {
         //     const obj = {
@@ -24,7 +25,8 @@ function init() {
         // });
         const obj = {
             apiKey: apiKey,
-            t: encodeURI(movie)
+            t: encodeURI(movie),
+            pageNumber: 2
         };
 
         makeRequest(obj);
@@ -70,30 +72,8 @@ function buildQueryParams(obj) {
 
 function createMovieCard(movie) {
     const mainElem = document.getElementsByTagName('main')[0];
-
-    const cardElem = document.createElement('div');
-    const imgElem = document.createElement('img');
-    const detailsElem = document.createElement('div');
-    const titleElem = document.createElement('h5');
-    const yearElem = document.createElement('h6');
-    const plotElem = document.createElement('p');
-
-    titleElem.innerText = movie.Title;
-    yearElem.innerText = movie.Year;
-    plotElem.innerText = movie.Plot;
-
-    imgElem.setAttribute('src', movie.Poster);
-    imgElem.setAttribute('width', '150px');
-
-    cardElem.append(imgElem);
-    cardElem.append(detailsElem);
-
-    detailsElem.append(titleElem);
-    detailsElem.append(yearElem);
-    detailsElem.append(plotElem);
-
-    cardElem.classList.add('movie-card');
-    mainElem.append(cardElem);
+    const card = new Card(movie);
+    mainElem.append(card.elem);
 }
 
 function clearData() {
